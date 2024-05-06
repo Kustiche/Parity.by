@@ -760,6 +760,16 @@
 	}
 }
 
+.swiper-certificates {
+	height: 380px;
+
+	.swiper-blue__slide-inner {
+		display: flex;
+		width: 260px;
+		height: 380px;
+	}
+}
+
 .card {
 	display: flex;
 	flex-direction: column;

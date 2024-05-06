@@ -1,0 +1,8 @@
+.certificates {
+	position: relative;
+
+	&::after {
+		position: absolute;
+		content: '';
+	}
+}

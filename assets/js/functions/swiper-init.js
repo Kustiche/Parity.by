@@ -93,6 +93,37 @@ const swiperArticles = new Swiper('.swiper-articles', {
 	effect: 'slide',
 });
 
+const swiperCertificates = new Swiper('.swiper-certificates', {
+	speed: 600,
+	slidesPerView: 'auto',
+	slidesPerGroup: 1,
+	spaceBetween: 10,
+	centeredSlides: true,
+	loop: true,
+
+	pagination: {
+		el: '.swiper-certificates__pagination',
+		clickable: true,
+		renderBullet: function (index, className) {
+			return '<button class="' + className + ' swiper-blue__bullet btn-reset"></button>';
+		},
+	},
+
+	breakpoints: {
+		1440: {
+			spaceBetween: 30,
+		},
+		1024: {
+			spaceBetween: 25,
+		},
+		768: {
+			spaceBetween: 25,
+		},
+	},
+
+	effect: 'slide',
+});
+
 const swiperImages = new Swiper('.swiper-images', {
 	speed: 600,
 	slidesPerView: 'auto',
